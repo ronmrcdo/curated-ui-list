@@ -12,7 +12,7 @@ type Props = {
 };
 
 function Header({ toggleSidebar }: Props) {
-  const [isLightMode, setLightTheme] = useState(true);
+  const [isLightMode, setLightTheme] = useState(false);
 
   const toggleTheme = () => {
     setLightTheme(!isLightMode);

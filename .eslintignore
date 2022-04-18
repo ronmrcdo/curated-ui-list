@@ -3,3 +3,7 @@ build
 **/node_modules/**
 /.next
 tailwind.config.js
+**.md
+/out
+/.next
+/.vscode
