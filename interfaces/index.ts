@@ -5,6 +5,28 @@
 // import { User } from 'path/to/interfaces';
 
 export type User = {
-  id: number
-  name: string
-}
+  id: number;
+  name: string;
+  avatar: string;
+};
+
+export type Project = {
+  id: number;
+  name: string;
+};
+
+export type Task = {
+  id: string;
+  title: string;
+  description: string;
+  labels: TaskLabel[];
+  commentCount: number;
+  attachmentCounts: number;
+};
+
+export type TaskLabel = {
+  type: ColorType;
+  content: string;
+};
+
+export type ColorType = 'success' | 'info' | 'warn' | 'danger';
